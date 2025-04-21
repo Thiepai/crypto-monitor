@@ -82,12 +82,12 @@ Permite que se visulize:
 ## 📸 Exemplos no emulador android
 
 ### Tela inicial
+![Cotação inicial](./tela_inicial.png)
 
 
 ### Após atualização da cotação
-![Cotação atualizada](./tela_inicial.png)
+![Cotação atualizada](./tela_atualizada.png)
 
-> 📝 *As imagens devem ser salvas na pasta `screenshots/` do repositório.*
 
 ---
 
