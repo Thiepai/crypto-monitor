@@ -1,22 +1,22 @@
-# 📱 Crypto Monitor - Android App
+# 📱 Crypto Monitor - Android
 
-Aplicativo Android criado com **Kotlin** para acompanhar em tempo real o preço do **Bitcoin**, utilizando requisições HTTP com **Retrofit** e **corrotinas**.
+Aplicação em Android criado com **Kotlin** para acompanhar o preço do **Bitcoin**, utilizando requisições HTTP com **Retrofit** e **corrotinas**.
 
 ---
 
-## 📁 Estrutura principal do projeto
+## 📁 Estrutura de arquivos do projeto
 
 ### 🟢 `MainActivity.kt` (`main`)
-Classe principal do app e ponto inicial da aplicação.  
+Classe principal da aplicação, seu ponto de partida
 Responsável por:
 - Montar a interface da tela inicial  
-- Personalizar a barra superior (Toolbar)  
+- Personalizar a Toolbar  
 - Controlar o botão **“ATUALIZAR”**  
-- Executar a função `makeRestCall()` com uso de **coroutines**
+- Executar a função `makeRestCall()` com uso de **corrotinas**
 
 ---
 
-### 🟣 `MercadoBitcoinService.kt` (`service`)
+### 🧾 `MercadoBitcoinService.kt` (`service`)
 Interface responsável por definir os endpoints da API pública do **Mercado Bitcoin**, usando Retrofit.
 
 ```kotlin
@@ -27,19 +27,19 @@ suspend fun getTicker(): Response<TickerResponse>
 ---
 
 ### 🛠 `MercadoBitcoinServiceFactory.kt` (`service`)
-Classe que instancia e configura o Retrofit para uso no projeto.  
+Classe que faz a instancia e configuração para a autilização de Rtrofit no aplicação 
 Define:
 - A base URL: `https://www.mercadobitcoin.net/`  
-- O conversor de JSON (GsonConverter)
+- O conversor JSON (GsonConverter)
 
 ---
 
-### 🧾 `TickerResponse.kt` (`model`)
+### 🟣 `TickerResponse.kt` (`model`)
 Modelo de dados que representa a estrutura da resposta da API.  
-Permite acesso aos dados como:
-- Último valor da moeda (`last`)
+Permite que se visulize:
+- Último valor do bitcoin (`last`)
 - Data da cotação (`date`)
-- Outros valores como `high`, `low`, `vol`, `buy`, `sell`
+- Outros valores como: `high`, `low`, `vol`, `buy`, `sell`
 
 ---
 
@@ -47,9 +47,9 @@ Permite acesso aos dados como:
 
 1. Abra o projeto no **Android Studio**
 2. Utilize um emulador (recomendado: API 30+) ou conecte um dispositivo físico
-3. Clique no botão **Run ▶️**
-4. O app será instalado e exibirá a cotação atual do Bitcoin
-5. Pressione **“ATUALIZAR”** para buscar os dados mais recentes
+3. Rode o projeto
+4. O app será instalado e exibirá a moeda Bitcoin
+5. Pressione **“ATUALIZAR”** para buscar os valores mais recentes
 
 ---
 
@@ -79,10 +79,10 @@ Permite acesso aos dados como:
 
 ---
 
-## 📸 Exemplos visuais
+## 📸 Exemplos no emulador android
 
 ### Tela inicial
-![Tela inicial](./screenshots/tela_inicial.png)
+
 
 ### Após atualização da cotação
 ![Cotação atualizada](./screenshots/atualizado.png)
@@ -97,17 +97,6 @@ Permite acesso aos dados como:
 - Retrofit
 - Coroutines
 - AndroidX
-- Material Design
 
 ---
 
-## 💡 Possíveis melhorias futuras
-
-- Adicionar suporte a outras criptomoedas além do Bitcoin  
-- Exibir gráfico com histórico de preços  
-- Notificações em tempo real para mudanças bruscas de valor  
-- Dark mode automático baseado no sistema
-
----
-
-**Feito com 💻 por [Seu Nome]**
