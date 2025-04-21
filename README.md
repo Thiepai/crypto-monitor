@@ -85,7 +85,7 @@ Permite que se visulize:
 
 
 ### Após atualização da cotação
-![Cotação atualizada](./screenshots/atualizado.png)
+![Cotação atualizada](./tela_inicial.png)
 
 > 📝 *As imagens devem ser salvas na pasta `screenshots/` do repositório.*
 
