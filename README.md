@@ -1,4 +1,4 @@
-# 📱 Crypto Monitor - Android
+#  Crypto Monitor - Android Kotlin
 
 Aplicação em Android criado com **Kotlin** para acompanhar o preço do **Bitcoin**, utilizando requisições HTTP com **Retrofit** e **corrotinas**.
 
@@ -57,24 +57,23 @@ Permite que se visulize:
 
 ### 1. Inicialização
 - Ao abrir o app, a `MainActivity` é iniciada
-- A toolbar é configurada com título e cor personalizada
+- A toolbar é configurada com título e cor personalizados
 - O botão de atualização é ativado
 
 ### 2. Interação do usuário
-- Ao tocar no botão, a função `makeRestCall()` é disparada
-- A chamada HTTP ocorre sem bloquear a interface do usuário, graças ao uso de `Dispatchers.Main`
+- Ao tocar no botão, a função `makeRestCall()` é disparada e - A chamada HTTP ocorre sem bloquear a interface do usuário, graças ao uso de `Dispatchers.Main`
 
 ### 3. Requisição HTTP
 - A chamada é feita para o endpoint `api/BTC/ticker/`
-- O Retrofit é configurado dinamicamente via `MercadoBitcoinServiceFactory`
+- O Retrofit é configurado dinamicamente via classe service `MercadoBitcoinServiceFactory`
 
 ### 4. Apresentação dos dados
-- O valor do Bitcoin é exibido em formato monetário BRL (R$), com `NumberFormat`
-- A data da cotação é convertida de Unix timestamp para `"dd/MM/yyyy HH:mm:ss"`
-- Os dados são exibidos nos componentes `TextView` da interface
+- O valor do Bitcoin é exibido em BRL (real), com o `NumberFormat`
+- A data da cotação é convertida de Unix timestamp para o padrão `"dd/MM/yyyy HH:mm:ss"`
+- Os dados são exibidos nos componentes de visualização `TextView` da interface
 
 ### 5. Tratamento de erros
-- Em caso de erro HTTP (400, 404 etc), uma mensagem Toast específica é mostrada
+- Em caso de erro (400, 404 etc), uma mensagem Toast específica é mostrada
 - Para falhas inesperadas (sem rede, erro de parsing etc), o app exibe uma mensagem genérica
 
 ---
