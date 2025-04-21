@@ -3,7 +3,15 @@
 Aplicação em Android criado com **Kotlin** para acompanhar o preço do **Bitcoin**, utilizando requisições HTTP com **Retrofit** e **corrotinas**.
 
 ---
+## ▶️ Como executar o projeto
 
+1. Abra o projeto no **Android Studio**
+2. Utilize um emulador (recomendado: API 30+) ou conecte um dispositivo físico
+3. Rode o projeto
+4. O app será instalado e exibirá a moeda Bitcoin
+5. Pressione **“ATUALIZAR”** para buscar os valores mais recentes
+
+---
 ## 📁 Estrutura de arquivos do projeto
 
 ### 🟢 `MainActivity.kt` (`main`)
@@ -40,16 +48,6 @@ Permite que se visulize:
 - Último valor do bitcoin (`last`)
 - Data da cotação (`date`)
 - Outros valores como: `high`, `low`, `vol`, `buy`, `sell`
-
----
-
-## ▶️ Como executar o projeto
-
-1. Abra o projeto no **Android Studio**
-2. Utilize um emulador (recomendado: API 30+) ou conecte um dispositivo físico
-3. Rode o projeto
-4. O app será instalado e exibirá a moeda Bitcoin
-5. Pressione **“ATUALIZAR”** para buscar os valores mais recentes
 
 ---
 
